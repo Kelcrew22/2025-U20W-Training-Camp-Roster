@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_672605121f0b17568f937f89d4419bb7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_672605121f0b17568f937f89d4419bb7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_672605121f0b17568f937f89d4419bb7 = L.map(
+                "map_672605121f0b17568f937f89d4419bb7",
+                {
+                    center: [39.8283, -98.5795],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e2e3cb56b3c858f0d67aa67b11373c26 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_672605121f0b17568f937f89d4419bb7);
+        
+    
+            var marker_cluster_7087b630e38f803e17b3d31c47fa73b1 = L.markerClusterGroup(
+                {}
+            );
+            map_672605121f0b17568f937f89d4419bb7.addLayer(marker_cluster_7087b630e38f803e17b3d31c47fa73b1);
+        
+    
+            var marker_bbfd06644d135b5f940ecee31763e8c2 = L.marker(
+                [37.4275, -122.1697],
+                {}
+            ).addTo(marker_cluster_7087b630e38f803e17b3d31c47fa73b1);
+        
+    
+        var popup_05f556fefdee10775f366513ba893df9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_639dd1afad1a2e5d748c7ac630733ee6 = $(`<div id="html_639dd1afad1a2e5d748c7ac630733ee6" style="width: 100.0%; height: 100.0%;"><b>Caroline Birkel</b><br>Position: GK<br>Team: Stanford<br>Location: Stanford, CA</div>`)[0];
+            popup_05f556fefdee10775f366513ba893df9.setContent(html_639dd1afad1a2e5d748c7ac630733ee6);
+        
+
+        marker_bbfd06644d135b5f940ecee31763e8c2.bindPopup(popup_05f556fefdee10775f366513ba893df9)
+        ;
+
+        
+    
+    
+            var marker_34c1f37d8c313e4d75a451806e1f5bf4 = L.marker(
+                [41.7056, -86.2353],
+                {}
+            ).addTo(marker_cluster_7087b630e38f803e17b3d31c47fa73b1);
+        
+    
+        var popup_260147d1c0fc9cf1bb61b25ed3848934 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7e7dbef65f236d3bda5ccc0e2dfe8205 = $(`<div id="html_7e7dbef65f236d3bda5ccc0e2dfe8205" style="width: 100.0%; height: 100.0%;"><b>Sonoma Kasica</b><br>Position: GK<br>Team: Notre Dame<br>Location: Notre Dame, IN</div>`)[0];
+            popup_260147d1c0fc9cf1bb61b25ed3848934.setContent(html_7e7dbef65f236d3bda5ccc0e2dfe8205);
+        
+
+        marker_34c1f37d8c313e4d75a451806e1f5bf4.bindPopup(popup_260147d1c0fc9cf1bb61b25ed3848934)
+        ;
+
+        
+    
+    
+            var marker_795a420b7d9066f0d85fde47e4b6331b = L.marker(
+                [30.4383, -84.2807],
+                {}
+            ).addTo(marker_cluster_7087b630e38f803e17b3d31c47fa73b1);
+        
+    
+        var popup_ae3c8bc22cb618b8d9b6d7640dfbd557 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb5ff5f519e0ed32809a87bc70b1146f = $(`<div id="html_cb5ff5f519e0ed32809a87bc70b1146f" style="width: 100.0%; height: 100.0%;"><b>Adelyn Todd</b><br>Position: GK<br>Team: Florida State<br>Location: Tallahassee, FL</div>`)[0];
+            popup_ae3c8bc22cb618b8d9b6d7640dfbd557.setContent(html_cb5ff5f519e0ed32809a87bc70b1146f);
+        
+
+        marker_795a420b7d9066f0d85fde47e4b6331b.bindPopup(popup_ae3c8bc22cb618b8d9b6d7640dfbd557)
+        ;
+
+        
+    
+    
+            var marker_a3b2b46f5e4338499770a8c0fbaaeade = L.marker(
+                [43.0731, -89.4012],
+                {}
+            ).addTo(marker_cluster_7087b630e38f803e17b3d31c47fa73b1);
+        
+    
+        var popup_7ae853735258938ee91ee9ab5ee5db8c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc9382e8fb6ba068b6e9b60d4ff8e761 = $(`<div id="html_bc9382e8fb6ba068b6e9b60d4ff8e761" style="width: 100.0%; height: 100.0%;"><b>Hailey Baumann</b><br>Position: D<br>Team: Wisconsin<br>Location: Madison, WI</div>`)[0];
+            popup_7ae853735258938ee91ee9ab5ee5db8c.setContent(html_bc9382e8fb6ba068b6e9b60d4ff8e761);
+        
+
+        marker_a3b2b46f5e4338499770a8c0fbaaeade.bindPopup(popup_7ae853735258938ee91ee9ab5ee5db8c)
+        ;
+
+        
+    
+    
+            var marker_d2bf2980bb4699eb354735dada1574eb = L.marker(
+                [38.9907, -76.9378],
+                {}
+            ).addTo(marker_cluster_7087b630e38f803e17b3d31c47fa73b1);
+        
+    
+        var popup_da9af78aab6175af2ce1b9a686f48515 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cdcad8fab86584d5cfab65878ef3823b = $(`<div id="html_cdcad8fab86584d5cfab65878ef3823b" style="width: 100.0%; height: 100.0%;"><b>Kennedy Bell</b><br>Position: D<br>Team: Maryland<br>Location: College Park, MD</div>`)[0];
+            popup_da9af78aab6175af2ce1b9a686f48515.setContent(html_cdcad8fab86584d5cfab65878ef3823b);
+        
+
+        marker_d2bf2980bb4699eb354735dada1574eb.bindPopup(popup_da9af78aab6175af2ce1b9a686f48515)
+        ;
+
+        
+    
+    
+            var marker_3486d9b9909317af897b5970b10b13cc = L.marker(
+                [39.9612, -82.9988],
+                {}
+            ).addTo(marker_cluster_7087b630e38f803e17b3d31c47fa73b1);
+        
+    
+        var popup_ca5d28a89ec4d69742d06ef1c02dcefa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5939d4952d35f85ff18099c0b5f90a8c = $(`<div id="html_5939d4952d35f85ff18099c0b5f90a8c" style="width: 100.0%; height: 100.0%;"><b>Ava Bramblett</b><br>Position: D<br>Team: Ohio State<br>Location: Columbus, OH</div>`)[0];
+            popup_ca5d28a89ec4d69742d06ef1c02dcefa.setContent(html_5939d4952d35f85ff18099c0b5f90a8c);
+        
+
+        marker_3486d9b9909317af897b5970b10b13cc.bindPopup(popup_ca5d28a89ec4d69742d06ef1c02dcefa)
+        ;
+
+        
+    
+    
+            var marker_f87f4b0a5676e55d3beaa4f9dab80427 = L.marker(
+                [47.6062, -122.3321],
+                {}
+            ).addTo(marker_cluster_7087b630e38f803e17b3d31c47fa73b1);
+        
+    
+        var popup_317dcb39380707105833788b9a94d5a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_77077a5c8b895f87ed78d10121549454 = $(`<div id="html_77077a5c8b895f87ed78d10121549454" style="width: 100.0%; height: 100.0%;"><b>Jordyn Bugg</b><br>Position: D<br>Team: Seattle Reign<br>Location: Seattle, WA</div>`)[0];
+            popup_317dcb39380707105833788b9a94d5a4.setContent(html_77077a5c8b895f87ed78d10121549454);
+        
+
+        marker_f87f4b0a5676e55d3beaa4f9dab80427.bindPopup(popup_317dcb39380707105833788b9a94d5a4)
+        ;
+
+        
+    
+    
+            var marker_99b57d67f820fb04f3a0bf8b506a3386 = L.marker(
+                [32.7555, -97.3308],
+                {}
+            ).addTo(marker_cluster_7087b630e38f803e17b3d31c47fa73b1);
+        
+    
+        var popup_a1a57a37e14270f5cab29fd2a128e5a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b678debdf0982fee26b1525ee881fbc3 = $(`<div id="html_b678debdf0982fee26b1525ee881fbc3" style="width: 100.0%; height: 100.0%;"><b>Cameron Patton</b><br>Position: D<br>Team: Texas Christian<br>Location: Fort Worth, TX</div>`)[0];
+            popup_a1a57a37e14270f5cab29fd2a128e5a4.setContent(html_b678debdf0982fee26b1525ee881fbc3);
+        
+
+        marker_99b57d67f820fb04f3a0bf8b506a3386.bindPopup(popup_a1a57a37e14270f5cab29fd2a128e5a4)
+        ;
+
+        
+    
+    
+            var marker_709dc5369bdbd1196423b067910ae7bd = L.marker(
+                [35.994, -78.8986],
+                {}
+            ).addTo(marker_cluster_7087b630e38f803e17b3d31c47fa73b1);
+        
+    
+        var popup_c9f084e82e9145a1824c0af20a9398fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0580c32fff68bba15fd95f0c7fceee1 = $(`<div id="html_a0580c32fff68bba15fd95f0c7fceee1" style="width: 100.0%; height: 100.0%;"><b>Cameron Roller</b><br>Position: D<br>Team: Duke<br>Location: Durham, NC</div>`)[0];
+            popup_c9f084e82e9145a1824c0af20a9398fd.setContent(html_a0580c32fff68bba15fd95f0c7fceee1);
+        
+
+        marker_709dc5369bdbd1196423b067910ae7bd.bindPopup(popup_c9f084e82e9145a1824c0af20a9398fd)
+        ;
+
+        
+    
+    
+            var marker_91ba2d816dacbebb18554e9fdda388d3 = L.marker(
+                [41.7056, -86.2353],
+                {}
+            ).addTo(marker_cluster_7087b630e38f803e17b3d31c47fa73b1);
+        
+    
+        var popup_5fac49777bc81a5ee48baca0dc30cbc9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3e66533d78eb08e1b6ddea419130136 = $(`<div id="html_c3e66533d78eb08e1b6ddea419130136" style="width: 100.0%; height: 100.0%;"><b>Morgan Roy</b><br>Position: D<br>Team: Notre Dame<br>Location: Notre Dame, IN</div>`)[0];
+            popup_5fac49777bc81a5ee48baca0dc30cbc9.setContent(html_c3e66533d78eb08e1b6ddea419130136);
+        
+
+        marker_91ba2d816dacbebb18554e9fdda388d3.bindPopup(popup_5fac49777bc81a5ee48baca0dc30cbc9)
+        ;
+
+        
+    
+    
+            var marker_768f81f3e03cd1500bddb0e790e56260 = L.marker(
+                [40.7982, -77.8599],
+                {}
+            ).addTo(marker_cluster_7087b630e38f803e17b3d31c47fa73b1);
+        
+    
+        var popup_be09130fe64d80a01f8dcdab8366af9b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f85aaf9360042759d6c36e19d4c431e = $(`<div id="html_4f85aaf9360042759d6c36e19d4c431e" style="width: 100.0%; height: 100.0%;"><b>Kaelyn Wolfe</b><br>Position: D<br>Team: Penn State<br>Location: University Park, PA</div>`)[0];
+            popup_be09130fe64d80a01f8dcdab8366af9b.setContent(html_4f85aaf9360042759d6c36e19d4c431e);
+        
+
+        marker_768f81f3e03cd1500bddb0e790e56260.bindPopup(popup_be09130fe64d80a01f8dcdab8366af9b)
+        ;
+
+        
+    
+    
+            var marker_d3a4ec8ffe5f9fe9dc5431e20294acce = L.marker(
+                [37.4275, -122.1697],
+                {}
+            ).addTo(marker_cluster_7087b630e38f803e17b3d31c47fa73b1);
+        
+    
+        var popup_9e21ecd9a43af5dc5a52282d9556dedc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b2feb4bc49cb51752c0e1b096e75fd5 = $(`<div id="html_9b2feb4bc49cb51752c0e1b096e75fd5" style="width: 100.0%; height: 100.0%;"><b>Mia Bhuta</b><br>Position: M<br>Team: Stanford<br>Location: Stanford, CA</div>`)[0];
+            popup_9e21ecd9a43af5dc5a52282d9556dedc.setContent(html_9b2feb4bc49cb51752c0e1b096e75fd5);
+        
+
+        marker_d3a4ec8ffe5f9fe9dc5431e20294acce.bindPopup(popup_9e21ecd9a43af5dc5a52282d9556dedc)
+        ;
+
+        
+    
+    
+            var marker_49b90b8f0fb7b159e4845d45b5294cb3 = L.marker(
+                [37.4275, -122.1697],
+                {}
+            ).addTo(marker_cluster_7087b630e38f803e17b3d31c47fa73b1);
+        
+    
+        var popup_351e8a6167ec9d6fdfdead6435e45c20 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6099e3dc75679ae1c1e9cafd6c38344 = $(`<div id="html_e6099e3dc75679ae1c1e9cafd6c38344" style="width: 100.0%; height: 100.0%;"><b>Shae Harvey</b><br>Position: M<br>Team: Stanford<br>Location: Stanford, CA</div>`)[0];
+            popup_351e8a6167ec9d6fdfdead6435e45c20.setContent(html_e6099e3dc75679ae1c1e9cafd6c38344);
+        
+
+        marker_49b90b8f0fb7b159e4845d45b5294cb3.bindPopup(popup_351e8a6167ec9d6fdfdead6435e45c20)
+        ;
+
+        
+    
+    
+            var marker_095fd169e626d7ed42b35c6237e3e47d = L.marker(
+                [40.01499, -105.27055],
+                {}
+            ).addTo(marker_cluster_7087b630e38f803e17b3d31c47fa73b1);
+        
+    
+        var popup_5c403ac546e589fd79e048959464278e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cfa8212e3c23c7549287808b316f8f88 = $(`<div id="html_cfa8212e3c23c7549287808b316f8f88" style="width: 100.0%; height: 100.0%;"><b>Reagan Kotschau</b><br>Position: M<br>Team: Colorado<br>Location: Boulder, CO</div>`)[0];
+            popup_5c403ac546e589fd79e048959464278e.setContent(html_cfa8212e3c23c7549287808b316f8f88);
+        
+
+        marker_095fd169e626d7ed42b35c6237e3e47d.bindPopup(popup_5c403ac546e589fd79e048959464278e)
+        ;
+
+        
+    
+    
+            var marker_d485962263cfb3a367da694eeec34867 = L.marker(
+                [38.9907, -76.9378],
+                {}
+            ).addTo(marker_cluster_7087b630e38f803e17b3d31c47fa73b1);
+        
+    
+        var popup_062403372dac32424772fb6e76b14e84 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b5a5d5ea0b51fa22a86b4119d31a598 = $(`<div id="html_5b5a5d5ea0b51fa22a86b4119d31a598" style="width: 100.0%; height: 100.0%;"><b>Emily Lenhard</b><br>Position: M<br>Team: Maryland<br>Location: College Park, MD</div>`)[0];
+            popup_062403372dac32424772fb6e76b14e84.setContent(html_5b5a5d5ea0b51fa22a86b4119d31a598);
+        
+
+        marker_d485962263cfb3a367da694eeec34867.bindPopup(popup_062403372dac32424772fb6e76b14e84)
+        ;
+
+        
+    
+    
+            var marker_9e44f3deb16e5c1805ea2a4f55be2494 = L.marker(
+                [35.9132, -79.0558],
+                {}
+            ).addTo(marker_cluster_7087b630e38f803e17b3d31c47fa73b1);
+        
+    
+        var popup_f96acc25262800ba11f540c2c52270ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f02c01b86699b16454d9d340ae31d54c = $(`<div id="html_f02c01b86699b16454d9d340ae31d54c" style="width: 100.0%; height: 100.0%;"><b>Ashley Pennie</b><br>Position: M<br>Team: UNC<br>Location: Chapel Hill, NC</div>`)[0];
+            popup_f96acc25262800ba11f540c2c52270ad.setContent(html_f02c01b86699b16454d9d340ae31d54c);
+        
+
+        marker_9e44f3deb16e5c1805ea2a4f55be2494.bindPopup(popup_f96acc25262800ba11f540c2c52270ad)
+        ;
+
+        
+    
+    
+            var marker_e19487fc00a6856c5b7fffe541836ae1 = L.marker(
+                [40.4259, -86.9081],
+                {}
+            ).addTo(marker_cluster_7087b630e38f803e17b3d31c47fa73b1);
+        
+    
+        var popup_c27a2f8b8dae28157619e69d5ccf3b1e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0dbb3d7bde68b80fe7c82b7dfdb8c98b = $(`<div id="html_0dbb3d7bde68b80fe7c82b7dfdb8c98b" style="width: 100.0%; height: 100.0%;"><b>Megan Santa Cruz</b><br>Position: M<br>Team: Purdue<br>Location: West Lafayette, IN</div>`)[0];
+            popup_c27a2f8b8dae28157619e69d5ccf3b1e.setContent(html_0dbb3d7bde68b80fe7c82b7dfdb8c98b);
+        
+
+        marker_e19487fc00a6856c5b7fffe541836ae1.bindPopup(popup_c27a2f8b8dae28157619e69d5ccf3b1e)
+        ;
+
+        
+    
+    
+            var marker_90f65c81646249590b8876c81dbb62f7 = L.marker(
+                [30.4383, -84.2807],
+                {}
+            ).addTo(marker_cluster_7087b630e38f803e17b3d31c47fa73b1);
+        
+    
+        var popup_1e5b1caf4ec477d82a77ce2dec50441e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a734664e0a7b1b0afa2285e8035d8e2 = $(`<div id="html_3a734664e0a7b1b0afa2285e8035d8e2" style="width: 100.0%; height: 100.0%;"><b>Taylor Suarez</b><br>Position: M<br>Team: Florida State<br>Location: Tallahassee, FL</div>`)[0];
+            popup_1e5b1caf4ec477d82a77ce2dec50441e.setContent(html_3a734664e0a7b1b0afa2285e8035d8e2);
+        
+
+        marker_90f65c81646249590b8876c81dbb62f7.bindPopup(popup_1e5b1caf4ec477d82a77ce2dec50441e)
+        ;
+
+        
+    
+    
+            var marker_c22b6983739174249cca72112e1fe16f = L.marker(
+                [47.6062, -122.3321],
+                {}
+            ).addTo(marker_cluster_7087b630e38f803e17b3d31c47fa73b1);
+        
+    
+        var popup_c220b7e053af7d6891f02bd04cd0b2bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75a4fcb4339f3fcc26fe1d162c31f8c6 = $(`<div id="html_75a4fcb4339f3fcc26fe1d162c31f8c6" style="width: 100.0%; height: 100.0%;"><b>Emeri Adames</b><br>Position: F<br>Team: Seattle Reign<br>Location: Seattle, WA</div>`)[0];
+            popup_c220b7e053af7d6891f02bd04cd0b2bb.setContent(html_75a4fcb4339f3fcc26fe1d162c31f8c6);
+        
+
+        marker_c22b6983739174249cca72112e1fe16f.bindPopup(popup_c220b7e053af7d6891f02bd04cd0b2bb)
+        ;
+
+        
+    
+    
+            var marker_144525ed7f9132565e1d3d9cd4a7f1b4 = L.marker(
+                [34.0007, -81.0348],
+                {}
+            ).addTo(marker_cluster_7087b630e38f803e17b3d31c47fa73b1);
+        
+    
+        var popup_3caea6c7e7ccb4dfd0357ddc68a2e703 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0d698576553d57ad6fddacd4a4a6f99 = $(`<div id="html_c0d698576553d57ad6fddacd4a4a6f99" style="width: 100.0%; height: 100.0%;"><b>Katie Collins</b><br>Position: F<br>Team: South Carolina<br>Location: Columbia, SC</div>`)[0];
+            popup_3caea6c7e7ccb4dfd0357ddc68a2e703.setContent(html_c0d698576553d57ad6fddacd4a4a6f99);
+        
+
+        marker_144525ed7f9132565e1d3d9cd4a7f1b4.bindPopup(popup_3caea6c7e7ccb4dfd0357ddc68a2e703)
+        ;
+
+        
+    
+    
+            var marker_b8f4e4214d20809326f8ef6d6a5bf7a0 = L.marker(
+                [35.994, -78.8986],
+                {}
+            ).addTo(marker_cluster_7087b630e38f803e17b3d31c47fa73b1);
+        
+    
+        var popup_fec79a2f5689c922fe27c6d49a2f14bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5a95de9ef693eeaf2a64e2538b4f081 = $(`<div id="html_a5a95de9ef693eeaf2a64e2538b4f081" style="width: 100.0%; height: 100.0%;"><b>Mia Oliaro</b><br>Position: F<br>Team: Duke<br>Location: Durham, NC</div>`)[0];
+            popup_fec79a2f5689c922fe27c6d49a2f14bd.setContent(html_a5a95de9ef693eeaf2a64e2538b4f081);
+        
+
+        marker_b8f4e4214d20809326f8ef6d6a5bf7a0.bindPopup(popup_fec79a2f5689c922fe27c6d49a2f14bd)
+        ;
+
+        
+    
+    
+            var marker_d8ffdfd157cb85e05859152b0b2c76df = L.marker(
+                [34.0259, -118.7798],
+                {}
+            ).addTo(marker_cluster_7087b630e38f803e17b3d31c47fa73b1);
+        
+    
+        var popup_c111b4c98df3766f8e7f17e05d58dfae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82832c0045ad1f83468f0b293993a135 = $(`<div id="html_82832c0045ad1f83468f0b293993a135" style="width: 100.0%; height: 100.0%;"><b>Julia Quinonez</b><br>Position: F<br>Team: Pepperdine<br>Location: Malibu, CA</div>`)[0];
+            popup_c111b4c98df3766f8e7f17e05d58dfae.setContent(html_82832c0045ad1f83468f0b293993a135);
+        
+
+        marker_d8ffdfd157cb85e05859152b0b2c76df.bindPopup(popup_c111b4c98df3766f8e7f17e05d58dfae)
+        ;
+
+        
+    
+    
+            var marker_28144382264418ca91a7cadfc4095734 = L.marker(
+                [39.9612, -82.9988],
+                {}
+            ).addTo(marker_cluster_7087b630e38f803e17b3d31c47fa73b1);
+        
+    
+        var popup_84841ce8eec15a9c35c3f2804b673b30 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db5789bda5a5259cd1e15b5fc3aa53bb = $(`<div id="html_db5789bda5a5259cd1e15b5fc3aa53bb" style="width: 100.0%; height: 100.0%;"><b>Amanda Schlueter</b><br>Position: F<br>Team: Ohio State<br>Location: Columbus, OH</div>`)[0];
+            popup_84841ce8eec15a9c35c3f2804b673b30.setContent(html_db5789bda5a5259cd1e15b5fc3aa53bb);
+        
+
+        marker_28144382264418ca91a7cadfc4095734.bindPopup(popup_84841ce8eec15a9c35c3f2804b673b30)
+        ;
+
+        
+    
+    
+            var marker_93b0b69b876fdae99c7e69079c162188 = L.marker(
+                [35.9132, -79.0558],
+                {}
+            ).addTo(marker_cluster_7087b630e38f803e17b3d31c47fa73b1);
+        
+    
+        var popup_399307c8078f7871d00f8f6ca2ff1bec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_484542098dd61b534b6320df0e5637af = $(`<div id="html_484542098dd61b534b6320df0e5637af" style="width: 100.0%; height: 100.0%;"><b>Olivia Thomas</b><br>Position: F<br>Team: UNC<br>Location: Chapel Hill, NC</div>`)[0];
+            popup_399307c8078f7871d00f8f6ca2ff1bec.setContent(html_484542098dd61b534b6320df0e5637af);
+        
+
+        marker_93b0b69b876fdae99c7e69079c162188.bindPopup(popup_399307c8078f7871d00f8f6ca2ff1bec)
+        ;
+
+        
+    
+</script>
+</html>
